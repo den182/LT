@@ -1,0 +1,11 @@
+<?php
+
+/**
+* Implementarion of hook_init
+*/
+
+function lt_setup_init() {
+  if (arg(0) == 'targets') {
+    drupal_add_js(drupal_get_path('module', 'lt_setup') . '/js/accordion.js');
+  } 
+}

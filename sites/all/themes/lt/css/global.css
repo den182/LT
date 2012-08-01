@@ -1,2 +1,19 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/*
+.region-branding,
+.panel-panel,
+.region-user-second {
+  padding:15px;
+  background: #000;
+  opacity:0.6;
+  box-shadow:2px 2px 5px #000;
+  border-radius:20px;
+  color:#fff;
+}
+*/
+
+.page-user-edit .tabs {
+  display:none;
+}

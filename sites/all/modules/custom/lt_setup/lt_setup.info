@@ -1,0 +1,4 @@
+name = LT basic setup
+description = Basic setup for site
+package = LT
+core = 7.x
