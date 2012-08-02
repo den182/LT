@@ -1,19 +1,82 @@
 /* This file will hold styles for the mobile version of your website (mobile first). */
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
-/*
-.region-branding,
-.panel-panel,
-.region-user-second {
+body {
+  ~background:url('images/bg.jpg') no-repeat 0 0 transparent;
+}
+
+
+a:link, a:visited {
+  color: #C2E60A;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#85FF00;
+  text-shadow: 0 0 5px #fff;
+}
+
+.region-branding .region-inner,
+.panel-panel .inside,
+.region-user-second .region-inner {
   padding:15px;
+  margin-bottom:20px;
   background: #000;
-  opacity:0.6;
+  opacity:0.8;
   box-shadow:2px 2px 5px #000;
   border-radius:20px;
   color:#fff;
+  font-size:16px;
 }
-*/
+
+.region-branding .region-inner,
+.region-user-second .region-inner {
+  height:100px;
+}
+
+.panel-panel {
+  margin-left: 10px;
+  margin-right: 10px;  
+}
 
 .page-user-edit .tabs {
   display:none;
+}
+
+
+#block-views-user-profile-block .views-field-picture {
+  float:left;
+  margin-right:10px;
+  min-height:80px;
+  border:1px solid #fff;
+}
+
+#block-views-user-profile-block .views-field-name {
+  font-size:18px;
+}
+
+#block-views-user-profile-block a {
+  font-size:14px;
+}
+
+.page-edit-targets .tabledrag-toggle-weight-wrapper {
+  display:none;
+}
+
+table,
+table tr.even,
+table tr.odd,
+table tr.odd td,
+table tr.even td,
+table thead th,
+table th {
+  background:transparent;
+  border:2px solid #3EBED6;
+  color:#fff;
+}
+
+table {
+  color:#fff;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
 }
