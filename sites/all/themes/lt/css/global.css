@@ -3,8 +3,19 @@
 
 body {
   ~background:url('images/bg.jpg') no-repeat 0 0 transparent;
+  color:#fff;
 }
 
+h1.title {
+letter-spacing: -0.05em;
+font-family: Verdana, 'Times New Roman', serif;
+}
+
+
+.tips, .description {
+font-size: 10px;
+color: #fff;
+}
 
 a:link, a:visited {
   color: #C2E60A;
@@ -16,6 +27,7 @@ a:hover {
   text-shadow: 0 0 5px #fff;
 }
 
+.page-user-edit #zone-content .region-inner,
 .region-branding .region-inner,
 .panel-panel .inside,
 .region-user-second .region-inner {
