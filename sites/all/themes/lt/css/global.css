@@ -2,7 +2,7 @@
 /* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
 
 body {
-  ~background:url('images/bg.jpg') no-repeat 0 0 transparent;
+  background:url('images/bg.jpg') no-repeat 0 0 transparent;
   color:#fff;
 }
 
@@ -30,7 +30,9 @@ a:hover {
 .page-user-edit #zone-content .region-inner,
 .region-branding .region-inner,
 .panel-panel .inside,
-.region-user-second .region-inner {
+.region-user-second .region-inner,
+.page-node-add #zone-content .region-inner,
+.page-node-edit #zone-content .region-inner {
   padding:15px;
   margin-bottom:20px;
   background: #000;
@@ -60,7 +62,10 @@ a:hover {
   float:left;
   margin-right:10px;
   min-height:80px;
-  border:1px solid #fff;
+}
+
+#block-views-user-profile-block .views-field-picture img {
+  border: 1px solid #fff;
 }
 
 #block-views-user-profile-block .views-field-name {
@@ -91,4 +96,61 @@ table {
   color:#fff;
   border-top-left-radius:15px;
   border-top-right-radius:15px;
+}
+
+.page-targets .views-field-title {
+  font-size: 22px;
+  color: #67FF61;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.page-targets .views-field-body {
+  padding:0 20px;
+  width:96%;
+}
+
+button, input[type="reset"], input[type="submit"], input[type="button"] {
+    padding: 10px 15px;
+    background: #4479BA;
+    color: #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #20538D;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+button:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: #356094;
+    border: solid 1px #2A4E77;
+    text-decoration: none;
+}
+
+button:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+input[type="button"]:active{
+    -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    background: #2E5481;
+    border: solid 1px #203E5F;
+}
+
+#zone-branding {
+  margin-top:20px;
 }
