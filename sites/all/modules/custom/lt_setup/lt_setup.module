@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 /**
 * Implementarion of hook_init
@@ -8,4 +8,17 @@ function lt_setup_init() {
   if (arg(0) == 'targets') {
     drupal_add_js(drupal_get_path('module', 'lt_setup') . '/js/accordion.js');
   } 
+}
+
+/**
+* Implementation of hook_form_alter
+*/
+
+function lt_setup_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'target_node_form':
+	  $form['title']['#title'] = 'Цель';
+	  drupal_set_title('Добавить/Редактировать цель');
+	  break;
+  }
 }

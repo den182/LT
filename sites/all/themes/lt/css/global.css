@@ -27,6 +27,10 @@ a:hover {
   text-shadow: 0 0 5px #fff;
 }
 
+body .messages,
+.page-node-delete #zone-content .region-inner,
+.page-user-password #zone-content .region-inner,
+.page-user-register #zone-content .region-inner,
 .page-user-edit #zone-content .region-inner,
 .region-branding .region-inner,
 .panel-panel .inside,
@@ -153,4 +157,110 @@ input[type="button"]:active{
 
 #zone-branding {
   margin-top:20px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"] { 
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding:2px;
+  height:50px;
+  line-height:30px;
+  font-size:1.5em;
+}
+
+textarea {
+  height:auto;
+}
+
+.resizable-textarea .grippie {
+  display:none;
+}
+
+.confirm-parent,
+.password-parent {
+  width:66%;
+}
+
+div.form-item div.password-suggestions {
+  display:none !important;
+}
+
+div.status, .ok {
+  color: #0D0;
+}
+
+div.error, .error {
+  color: #D00;
+}
+
+#user-login-form ul li {
+  margin:0;
+}
+
+#user-login-form .form-required {
+  display:none;
+}
+
+
+body ul.tabs li a:hover,
+body ul.tabs li a {
+  background:transparent;
+}
+
+body ul.primary li.active a:hover,
+body ul.primary li.active a {
+  background:transparent;
+  color:#fff;
+}  
+
+body ul.tabs {
+  border:none;
+  padding-left:0;
+}
+
+body ul.tabs li.active a,
+body ul.tabs li a {
+  border:2px solid #3d3;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding:10px 20px;
+  font-weight:bold;
+  background:#030;
+}
+
+body ul.tabs li.active a {
+  background:#3a2;
+}
+
+th.views-field-title {
+  width:25%;
+}
+
+a.tabledrag-handle .handle {
+  background-position:6px 12px;
+}
+
+#edit-preview {
+  display:none;
+}
+
+.messages {
+  display:none !important;
+}  
+
+.messages.error {
+  display:block !important;
+}
+
+#views-form-targets-block-2 .messages {
+  display:none !important;
+}
+
+body.page-node-edit ul.tabs,
+body.page-node-delete ul.tabs {
+  display:none;
 }
